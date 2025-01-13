@@ -6,5 +6,5 @@ const { createFood, updateFood, getFood, deleteFood }= require('../controllers/f
 router.post('/', createFood )
 router.put('/:id', updateFood)
 router.get('/:id', getFood)
-router.delete('/id:', deleteFood)
+router.delete('/:id', deleteFood)
 module.exports = router

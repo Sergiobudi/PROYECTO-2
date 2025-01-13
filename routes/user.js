@@ -5,7 +5,7 @@ const protecter= require('../middleware/auth')
 const { getUser, updateUser, deleteUser}= require ('../controllers/user')
 
 
-router.get('/:id',protecter, getUser)
+router.get('/:id', getUser)
 router.put('/:id',protecter, updateUser)
 router.delete('/:id',protecter, deleteUser)
 

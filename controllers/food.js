@@ -52,10 +52,10 @@ const deleteFood = async (req,res) => {
       if (!foodDelete) {
         return res.status(400).json({errorMessage: 'Food not found'})
         }
-    res.json(foodDelete)  
+    res.json({message:'Food delete'})  
    } catch (error) {
         console.log(error)
-        res.status({message: 'Food deleted'})
+        res.status(500)
         
     }
 }

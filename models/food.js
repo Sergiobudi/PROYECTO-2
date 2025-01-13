@@ -7,7 +7,9 @@ const foodSchema = new mongoose.Schema(
         name: { type: String, require: true, unique: true },
         ingredients: { type: String },
         description: { type: String},
-        price: { type: Number},
+        price: { type: Number, require: true},
+        stock: {type: Number, require: true}
+        
     },
     { timestamps: true }
 )
