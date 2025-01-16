@@ -9,7 +9,7 @@ const menuSchema= new mongoose.Schema(
             quantity: {type: Number, require: true}
         }
      ],
-     totalPriceMenu:{type:Number, require: true},
+     totalPrice: {type:Number, require: true},
      status: {type: String, default:'Pending', enum: ['Pending','In cooking','Delivered']}
    },
 
